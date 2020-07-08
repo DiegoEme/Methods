@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var carros = [
+        "BMW",
+        "Mazda",
+        "Mercedez Benz",
+        "Chevrolet",
+        "Renault",
+        "Subaru",
+        "Toyota",
+        "Ferrari",
+        "Hyundai",
+        "Peugeot",
+        "Nissan",
+      ];
+      var marca1 = "Mazda";
+      var marca2 = "Toyota";
+
+      var buscar = carros.some(function busqueda(marca) {
+        console.log(marca);
+        return marca.indexOf(marca1) >= 0;
+      });
+      console.log(buscar);
+
+      /*****MAP******/
+      var array = ["papa", "mama", "manzana", "loco"];
+
+      var ejercicio = array.map(function reverse(ejemplo) {
+        var reverso = "";
+        for (var i = ejemplo.length - 1; i >= 0; i--) {
+          reverso += ejemplo[i];
+        }
+        return reverso;
+      });
+      console.log(ejercicio);
+    </script>
+  </body>
+</html>
